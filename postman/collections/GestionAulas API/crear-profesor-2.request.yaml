@@ -1,0 +1,17 @@
+$kind: http-request
+name: 'Crear Profesor 2'
+method: POST
+url: 'http://localhost:8080/profesores'
+order: 7000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Luis Martinez",
+      "asignaturas": ["Acceso a Datos", "Desarrollo de Interfaces"],
+      "director": false,
+      "jefeEstudios": true
+    }

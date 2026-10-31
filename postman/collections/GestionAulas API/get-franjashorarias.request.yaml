@@ -1,0 +1,5 @@
+$kind: http-request
+name: 'Get Franjas Horarias'
+method: GET
+url: 'http://localhost:8080/franjashorarias'
+order: 1500

@@ -1,0 +1,16 @@
+$kind: http-request
+name: 'Crear Franja Horaria 34'
+method: POST
+url: 'http://localhost:8080/franjashorarias'
+order: 35000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "horaInicio": "11:45:00",
+      "horaFin": "12:40:00",
+      "dia": "2026-10-31"
+    }

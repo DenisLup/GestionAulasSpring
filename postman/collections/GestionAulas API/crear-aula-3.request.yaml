@@ -1,0 +1,15 @@
+$kind: http-request
+name: 'Crear Aula 3'
+method: POST
+url: 'http://localhost:8080/aulas'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "tieneOrdenadores": true,
+      "capacidad": 20
+    }

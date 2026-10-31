@@ -1,0 +1,17 @@
+$kind: http-request
+name: 'Crear Profesor 1'
+method: POST
+url: 'http://localhost:8080/profesores'
+order: 6000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Ana Garcia",
+      "asignaturas": ["Programacion", "Entornos de Desarrollo"],
+      "director": true,
+      "jefeEstudios": false
+    }

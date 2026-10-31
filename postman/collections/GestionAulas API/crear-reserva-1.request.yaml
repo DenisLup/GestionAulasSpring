@@ -1,0 +1,16 @@
+$kind: http-request
+name: 'Crear Reserva 1'
+method: POST
+url: 'http://localhost:8080/reservas'
+order: 44000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "profesor": { "id": 1 },
+      "aula": { "id": 1 },
+      "franjaHoraria": { "id": 1 }
+    }

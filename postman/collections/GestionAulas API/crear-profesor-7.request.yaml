@@ -1,0 +1,17 @@
+$kind: http-request
+name: 'Crear Profesor 7'
+method: POST
+url: 'http://localhost:8080/profesores'
+order: 12000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Sofia Perez",
+      "asignaturas": ["Desarrollo de Aplicaciones Multiplataforma", "Formacion y Orientacion Laboral"],
+      "director": false,
+      "jefeEstudios": false
+    }

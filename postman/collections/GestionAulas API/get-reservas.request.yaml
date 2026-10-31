@@ -1,0 +1,5 @@
+$kind: http-request
+name: 'Get Reservas'
+method: GET
+url: 'http://localhost:8080/reservas'
+order: 1600

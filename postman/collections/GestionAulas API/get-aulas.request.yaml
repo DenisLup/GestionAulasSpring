@@ -1,0 +1,53 @@
+$kind: http-request
+name: 'Get Aulas'
+method: GET
+url: 'http://localhost:8080/aulas'
+order: 500
+queryParams:
+  - key: tieneOrdenadores
+    value: 'true'
+    description: 'Filtrar aulas por si tienen ordenadores (true/false)'
+    disabled: false
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      // 1. Status code is 200
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
+
+      // 2. Response is a JSON array
+      pm.test("Response is a JSON array", function () {
+          const json = pm.response.json();
+          pm.expect(json).to.be.an("array");
+      });
+
+      // 3. Each aula has the expected fields
+      pm.test("Each aula has id, tieneOrdenadores and capacidad", function () {
+          const json = pm.response.json();
+          json.forEach(function (aula) {
+              pm.expect(aula).to.have.property("id");
+              pm.expect(aula).to.have.property("tieneOrdenadores");
+              pm.expect(aula).to.have.property("capacidad");
+          });
+      });
+
+      // 4. Filter is respected: all returned aulas match the query param
+      pm.test("All returned aulas match the tieneOrdenadores filter", function () {
+          const filterValue = pm.request.url.query.get("tieneOrdenadores");
+          if (filterValue === null) return; // no filter applied, skip
+          const expected = filterValue === "true";
+          const json = pm.response.json();
+          json.forEach(function (aula) {
+              pm.expect(aula.tieneOrdenadores).to.eql(expected);
+          });
+      });
+
+      // 5. capacidad is a positive number
+      pm.test("Each aula has a positive capacidad", function () {
+          const json = pm.response.json();
+          json.forEach(function (aula) {
+              pm.expect(aula.capacidad).to.be.a("number").and.to.be.above(0);
+          });
+      });

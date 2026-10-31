@@ -1,0 +1,17 @@
+$kind: http-request
+name: 'Crear Profesor 6'
+method: POST
+url: 'http://localhost:8080/profesores'
+order: 11000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Javier Romero",
+      "asignaturas": ["Programacion Multimedia y Dispositivos Moviles", "Sistemas Informaticos"],
+      "director": false,
+      "jefeEstudios": false
+    }

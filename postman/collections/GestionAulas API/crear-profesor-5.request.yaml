@@ -1,0 +1,17 @@
+$kind: http-request
+name: 'Crear Profesor 5'
+method: POST
+url: 'http://localhost:8080/profesores'
+order: 10000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Elena Fernandez",
+      "asignaturas": ["Sistemas de Gestion Empresarial", "Empresa e Iniciativa Emprendedora"],
+      "director": false,
+      "jefeEstudios": false
+    }

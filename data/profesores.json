@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Ana Garcia",
+        "asignaturas": ["Programacion", "Entornos de Desarrollo"],
+        "director": true,
+        "jefeEstudios": false
+    },
+    {
+        "nombre": "Luis Martinez",
+        "asignaturas": ["Acceso a Datos", "Desarrollo de Interfaces"],
+        "director": false,
+        "jefeEstudios": true
+    },
+    {
+        "nombre": "Marta Lopez",
+        "asignaturas": ["Bases de Datos", "Programacion de Servicios y Procesos"],
+        "director": false,
+        "jefeEstudios": false
+    },
+    {
+        "nombre": "Carlos Sanchez",
+        "asignaturas": ["Sistemas Informaticos", "Lenguajes de Marcas y Sistemas de Gestion de Informacion"],
+        "director": false,
+        "jefeEstudios": false
+    },
+    {
+        "nombre": "Elena Fernandez",
+        "asignaturas": ["Sistemas de Gestion Empresarial", "Empresa e Iniciativa Emprendedora"],
+        "director": false,
+        "jefeEstudios": false
+    },
+    {
+        "nombre": "Javier Romero",
+        "asignaturas": ["Programacion Multimedia y Dispositivos Moviles", "Sistemas Informaticos"],
+        "director": false,
+        "jefeEstudios": false
+    },
+    {
+        "nombre": "Sofia Perez",
+        "asignaturas": ["Desarrollo de Aplicaciones Multiplataforma", "Formacion y Orientacion Laboral"],
+        "director": false,
+        "jefeEstudios": false
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "profesor": {
+            "id": 1,
+            "nombre": "Ana Garcia",
+            "asignaturas": ["Programacion", "Entornos de Desarrollo"],
+            "director": true,
+            "jefeEstudios": false
+        },
+        "aula": {
+            "id": 1,
+            "tieneOrdenadores": true,
+            "capacidad": 30
+        },
+        "franjaHoraria": {
+            "id": 1,
+            "horaInicio": "08:30:00",
+            "horaFin": "09:25:00",
+            "dia": "2026-10-26"
+        }
+    },
+    {
+        "profesor": {
+            "id": 2,
+            "nombre": "Luis Martinez",
+            "asignaturas": ["Acceso a Datos", "Desarrollo de Interfaces"],
+            "director": false,
+            "jefeEstudios": true
+        },
+        "aula": {
+            "id": 2,
+            "tieneOrdenadores": false,
+            "capacidad": 25
+        },
+        "franjaHoraria": {
+            "id": 2,
+            "horaInicio": "09:25:00",
+            "horaFin": "10:20:00",
+            "dia": "2026-10-26"
+        }
+    },
+    {
+        "profesor": {
+            "id": 3,
+            "nombre": "Marta Lopez",
+            "asignaturas": ["Bases de Datos", "Programacion de Servicios y Procesos"],
+            "director": false,
+            "jefeEstudios": false
+        },
+        "aula": {
+            "id": 3,
+            "tieneOrdenadores": true,
+            "capacidad": 20
+        },
+        "franjaHoraria": {
+            "id": 3,
+            "horaInicio": "10:20:00",
+            "horaFin": "11:15:00",
+            "dia": "2026-10-26"
+        }
+    },
+    {
+        "profesor": {
+            "id": 4,
+            "nombre": "Carlos Sanchez",
+            "asignaturas": ["Sistemas Informaticos", "Lenguajes de Marcas y Sistemas de Gestion de Informacion"],
+            "director": false,
+            "jefeEstudios": false
+        },
+        "aula": {
+            "id": 4,
+            "tieneOrdenadores": false,
+            "capacidad": 40
+        },
+        "franjaHoraria": {
+            "id": 4,
+            "horaInicio": "11:45:00",
+            "horaFin": "12:40:00",
+            "dia": "2026-10-26"
+        }
+    },
+    {
+        "profesor": {
+            "id": 5,
+            "nombre": "Elena Fernandez",
+            "asignaturas": ["Sistemas de Gestion Empresarial", "Empresa e Iniciativa Emprendedora"],
+            "director": false,
+            "jefeEstudios": false
+        },
+        "aula": {
+            "id": 5,
+            "tieneOrdenadores": true,
+            "capacidad": 15
+        },
+        "franjaHoraria": {
+            "id": 5,
+            "horaInicio": "12:40:00",
+            "horaFin": "13:35:00",
+            "dia": "2026-10-26"
+        }
+    }
+]

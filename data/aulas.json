@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "tieneOrdenadores": true,
+        "capacidad": 30
+    },
+    {
+        "id": 2,
+        "tieneOrdenadores": false,
+        "capacidad": 25
+    },
+    {
+        "id": 3,
+        "tieneOrdenadores": true,
+        "capacidad": 20
+    },
+    {
+        "id": 4,
+        "tieneOrdenadores": false,
+        "capacidad": 40
+    },
+    {
+        "id": 5,
+        "tieneOrdenadores": true,
+        "capacidad": 15
+    }
+]

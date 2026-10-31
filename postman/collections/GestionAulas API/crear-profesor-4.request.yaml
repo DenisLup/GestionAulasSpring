@@ -1,0 +1,17 @@
+$kind: http-request
+name: 'Crear Profesor 4'
+method: POST
+url: 'http://localhost:8080/profesores'
+order: 9000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Carlos Sanchez",
+      "asignaturas": ["Sistemas Informaticos", "Lenguajes de Marcas y Sistemas de Gestion de Informacion"],
+      "director": false,
+      "jefeEstudios": false
+    }
